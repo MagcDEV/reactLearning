@@ -6,7 +6,7 @@ import Checkbox from '@mui/material/Checkbox';
 import IconButton from '@mui/material/IconButton';
 import DeleteIcon from '@mui/icons-material/Delete';
 
-const TodoItem = ({value, labelId, handleDoneTodo, handleDeleteTodo}) => {
+const TodoItem = ({ value, labelId, handleDoneTodo, handleDeleteTodo }) => {
   return (
     <ListItem
       key={value.id}
@@ -25,6 +25,7 @@ const TodoItem = ({value, labelId, handleDoneTodo, handleDeleteTodo}) => {
             tabIndex={-1}
             disableRipple
             inputProps={{ 'aria-labelledby': labelId }}
+            aria-label="checkbox"
           />
         </ListItemIcon>
         <ListItemText id={labelId} primary={value.description} />

@@ -10,11 +10,9 @@ const HomePage = () => {
     <h1 className="text-4xl m-5">Home Page</h1>
     <hr />
   <div className="m-5 rounded">
-    <Button 
-      variant="contained"
-      onClick={() => {setUser({name: "Manuel", job: "Developer"})}}>
-      Set User
-    </Button>
+    <pre aria-label="pre">
+      {JSON.stringify(user, null, 3)}
+    </pre>
   </div>
     </>
   )
